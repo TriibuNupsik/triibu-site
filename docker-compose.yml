@@ -1,0 +1,22 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginX
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '40080:80'
+      - '40081:81'
+      - '40443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+  triibu:
+    restart: unless-stopped
+    container_name: Triibu
+    volumes:
+      - s:\markus\Triibu_site\content\:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf      
+    ports:
+      - "28100:80"
+    image: nginx:latest

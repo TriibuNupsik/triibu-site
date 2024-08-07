@@ -1,0 +1,58 @@
+<head>
+  <link rel="icon" href="/triibu.ico">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/minecraftia" type="text/css">  
+  <script>
+    // Better Popup window code
+    var popupWindow = null;
+    function positionedPopup(url, winName, h, w, t, l) {
+      settings =
+        'height=' + h + ',width=' + w + ',top=' + t + ',left=' + l
+      popupWindow = window.open(url, winName, settings)
+    }
+    // Automatically Center your Popup
+    var popupWindow = null;
+    function centeredPopup(url, winName, h, w, scroll) {
+      LeftPosition = (screen.width) ? (screen.width - w) / 2 : 0;
+      TopPosition = (screen.height) ? (screen.height - h) / 2 : 0;
+      settings =
+        'height=' + h + ',width=' + w + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',resizable'
+      popupWindow = window.open(url, winName, settings)
+    }
+    // Close popup
+    function closeWindow() {
+      if (false == popupWindow.closed) {
+        popupWindow.close();
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-size: 96px;
+      font-family: MinecraftiaRegular;
+      color: white;
+      background-color: black;
+    }
+    button {
+      border-color:darkgray;
+    }
+  </style>
+</head>
+<body>
+  <select>
+    <option>E
+    <option>EE
+  </select>
+  
+  <div id="link">
+    <a href="https://youtu.be/dQw4w9WgXcQ?t=43"
+      onclick="positionedPopup(this.href,'myWindow','500','800','300','300');return false">Positioned Popup</a> 
+    <br>
+
+    <a href="https://youtu.be/dQw4w9WgXcQ?t=43"
+      onclick="centeredPopup(this.href,'myWindow','500','800','no','no');return false">Automatically Centered Popup</a>
+    <br>
+
+    <button onClick="JavaScript:closeWindow();" style="background-color: red; border: 0;;font-size: 64;">Close Popup Window</button>
+
+  </div>
+</body>

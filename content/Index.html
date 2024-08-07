@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/triibu.ico">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/minecraftia" type="text/css">
+  <title>Triibu's website</title>
+  <script>
+    // Option window
+    function U(text) {
+      var txt;
+      if (confirm(text)) {
+        centeredPopup('https://youtu.be/dQw4w9WgXcQ?t=43','myWindow','500','800','no','no');
+      } else {
+        window.open("https://youtu.be/dQw4w9WgXcQ?t=43");
+      }
+    }
+    // Automatically Center your Popup
+    var popupWindow = null;
+    function centeredPopup(url, winName, h, w, scroll) {
+      LeftPosition = (screen.width) ? (screen.width - w) / 2 : 0;
+      TopPosition = (screen.height) ? (screen.height - h) / 2 : 0;
+      settings =
+        'height=' + h + ',width=' + w + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',resizable'
+      popupWindow = window.open(url, winName, settings)
+}
+
+  </script>
+  <style>
+    body {
+      font-size: 2.5vw;
+      color:#ffffff;
+      background-color: #000000;
+      font-family: 'MinecraftiaRegular';
+      color:lime;
+    }
+    button {
+      border-color:darkgray;
+      font-family: 'MinecraftiaRegular';
+    }
+    h1 {
+      font-size: 4vw;
+      text-shadow: 0.5vw 0.5vw rgb(21, 63, 21);
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      margin-top: -5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="https://i.imgur.com/X60RSI4.png" style="position:absolute; bottom:0; right:0 ;height:50%; z-index: 1;">
+
+  <div style="text-align: center; z-index: 100;">
+    <h1>Triibu Nupsik's website</h1>
+    <br>
+    <button style="background-color:#00ff009d; font-size: 2.5vw; text-shadow: 0.25vw 0.25vw rgb(69, 69, 69); padding: .5vw;" onclick="window.location.href='/minecraft'">Minecraft server</button>
+    <br> <br>
+    <button style="background-color: #4441f3; font-size: 2.5vw; text-shadow: 0.25vw 0.25vw rgb(69, 69, 69); padding: .5vw;" onclick="window.location.href='/snake'">Snake game</button>
+  </div>
+
+  <!-- <iframe style="width: 50%; height: 50%; position:absolute;right:0;bottom:0;" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&amp;controls=0&amp;start=1&amp;html5=1&amp;hl=en&amp;iv_load_policy=1&amp;showinfo=0&amp;disablekb=1&amp;enablejsapi=1&amp;widgetid=1"></iframe> -->
+
+  <iframe style="bottom: 5px;left: 5px;position:absolute;" src="https://discord.com/widget?id=664107339770494986&theme=dark&username=Triibu" width="350" height="450" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+</body>
